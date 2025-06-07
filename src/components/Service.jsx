@@ -12,12 +12,12 @@ const services = [
     details: "With expertise in HTML, CSS, and JavaScript, I develop dynamic and engaging frontend solutions. My focus is on creating seamless user experiences that are both visually appealing and highly functional.",
   },
   {
-    title: "Graphic Design",
+   title: "Graphic Design",
     description: "Designing logos, banners, and other visual content.",
     details: "I create stunning graphic designs that effectively communicate your brand's message. From logos to social media graphics, my designs are crafted to capture attention and leave a lasting impression.",
   },
   {
-    title: "Lead Generation and Data Encoding",
+     title: "Lead Generation and Data Encoding",
     description: "Generating leads and encoding data for business growth.",
     details: "I assist businesses in generating quality leads and encoding data efficiently. My services include data entry, lead generation strategies, and ensuring accurate data management to support your business objectives.",
   },
@@ -48,7 +48,11 @@ const Service = () => {
         <h2 className="text-4xl font-bold text-center mb-12">My Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
-              <h3 className="mt-2 text-2xl font-bold text-transparent bg-clip-text 
+            <div
+              key={service.title}
+              className="bg-gray-800 px-6 pb-6 rounded-lg hover:shadow-lg transform 
+              transition-transform duration-300 hover:scale-105">
+             <h3 className="mt-2 text-2xl font-bold text-transparent bg-clip-text 
               bg-gradient-to-r from-green-400 to-blue-500">
                 {service.title}
               </h3>
@@ -57,9 +61,9 @@ const Service = () => {
                 className="mt-4 inline-block text-green-400 hover:text-blue-500 focus:outline-none"
                 onClick={() => handleReadMore(service.id)}
               >
-                {openId === service.id ? "Show Less" : "Read More"}
+                {openId === service.title ? "Show Less" : "Read More"}
               </button>
-              {openId === service.id && (
+              {openId === service.title && (
                 <div className="mt-3 text-gray-200 text-sm bg-gray-900 rounded p-3">
                   {service.details}
                 </div>
