@@ -59,7 +59,7 @@ const Service = () => {
               <p className="mt-2 text-gray-300">{service.description}</p>
               <button
                 className="mt-4 inline-block text-green-400 hover:text-blue-500 focus:outline-none"
-                onClick={() => handleReadMore(service.id)}
+                onClick={() => handleReadMore(service.title)}
               >
                 {openId === service.title ? "Show Less" : "Read More"}
               </button>
