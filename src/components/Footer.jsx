@@ -42,7 +42,7 @@ const Footer = () => {
             <a href="https://t.me/e_ephrem" className="text-gray-400 hover:text-white" target="_blank">
               <FaTelegram />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white" target="_blank" >
+            <a href="https://x.com/merhpe_" className="text-gray-400 hover:text-white" target="_blank" >
               <FaTwitter />
             </a>
             <a href="https://www.linkedin.com/in/bereket-mengesha/" className="text-gray-400 hover:text-white" target="_blank">
