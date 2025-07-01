@@ -1,5 +1,5 @@
 import React from "react";
-import loyedFlowers from "../assets/loyedFowers.PNG";
+import loyedFlowers from "../assets/loyedFlowers.PNG";
 import ItemRequestHome from "../assets/ItemRequestHome.png";
 import todolist from "../assets/todolist.png";
 
