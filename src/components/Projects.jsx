@@ -19,7 +19,7 @@ const projects = [
   },
   {
     id: 3,
-    name: "Book MS",
+    name: "Loyed Flowers",
     technologies: "MERN Stack",
     image: loyedFlowers,
     github: "https://github.com/ephrem20/loyed-flowers",
