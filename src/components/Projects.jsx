@@ -15,7 +15,7 @@ const projects = [
     id: 2,
     name: "Item Request App",
     image: ItemRequestHome,
-    github: "item-request.vercel.app",
+    github: "https://github.com/ephrem20/Item-Request",
   },
   {
     id: 3,
