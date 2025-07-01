@@ -1,5 +1,5 @@
 import React from "react";
-import employeeMSImage from "../assets/employee-ms.png";
+import loyedFlowers from "../assets/loyedFowers.png";
 import ItemRequestHome from "../assets/ItemRequestHome.png";
 import todolist from "../assets/todolist.png";
 
@@ -21,8 +21,8 @@ const projects = [
     id: 3,
     name: "Book MS",
     technologies: "MERN Stack",
-    image: employeeMSImage,
-    github: "https://github.com/YouafKhan1",
+    image: loyedFlowers,
+    github: "https://github.com/ephrem20/loyed-flowers",
   },
 ];
 
