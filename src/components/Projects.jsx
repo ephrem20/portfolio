@@ -1,6 +1,6 @@
 import React from "react";
 import employeeMSImage from "../assets/employee-ms.png";
-import bookMSImage from "../assets/ItemRequestHome.png";
+import ItemRequestHome from "../assets/ItemRequestHome.png";
 import todolist from "../assets/todolist.png";
 
 const projects = [
