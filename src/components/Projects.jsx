@@ -1,6 +1,6 @@
 import React from "react";
 import employeeMSImage from "../assets/employee-ms.png";
-import bookMSImage from "../assets/itemRequestHome.png";
+import bookMSImage from "../assets/ItemRequestHome.png";
 import todolist from "../assets/todolist.png";
 
 const projects = [
@@ -14,9 +14,8 @@ const projects = [
   {
     id: 2,
     name: "Item Request App",
-    image: bookMSImage,
-    github: "item-request.vercel.app
-",
+    image: ItemRequestHome,
+    github: "item-request.vercel.app",
   },
   {
     id: 3,
