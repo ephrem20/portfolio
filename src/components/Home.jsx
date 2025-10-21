@@ -1,13 +1,15 @@
 import React from 'react'
-import homepic from '../assets/homepic.jpg'
+// Use public asset to avoid bundling in JS chunk
+const homepic = '/homepic.jpg'
 
 const Home = () => {
   return (
     <div className=' text-black dark:bg-black dark:text-white text-center py-16'>
         <div className="flex justify-center">
           <div className="w-50 h-50 rounded-full bg-white dark:bg-black p-2 shadow-lg flex items-center justify-center overflow-hidden">
-        <img src={homepic} alt="" 
-        className='w-48 h-48 object-COVER rounded-full'/>
+        <img src={homepic} alt="Profile" loading="eager" decoding="async"
+        width="192" height="192"
+        className='w-48 h-48 object-cover rounded-full'/>
           </div>
         </div>
         <h1 className='text-4xl font-bold  bg-white text-black dark:bg-black dark:text-white'>
