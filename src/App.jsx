@@ -1,12 +1,15 @@
 
 import './App.css'
-import About from './components/About'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import Home from './components/Home'
+import React, { Suspense, lazy } from 'react'
 import Navbar from './components/Navbar'
-import Projects from './components/Projects'
-import Service from './components/Service'
+import Home from './components/Home'
+import LazySection from './components/LazySection'
+
+const About = lazy(() => import('./components/About'))
+const Service = lazy(() => import('./components/Service'))
+const Projects = lazy(() => import('./components/Projects'))
+const Contact = lazy(() => import('./components/Contact'))
+const Footer = lazy(() => import('./components/Footer'))
 
 function App() {
 
@@ -14,11 +17,34 @@ function App() {
     <div>
         <Navbar />
         <Home />
-        <About />
-        <Service />
-        <Projects />
-        <Contact />
-        <Footer />
+
+        <Suspense fallback={null}>
+          <LazySection id="about">
+            <About />
+          </LazySection>
+        </Suspense>
+
+        <Suspense fallback={null}>
+          <LazySection id="service">
+            <Service />
+          </LazySection>
+        </Suspense>
+
+        <Suspense fallback={null}>
+          <LazySection id="project">
+            <Projects />
+          </LazySection>
+        </Suspense>
+
+        <Suspense fallback={null}>
+          <LazySection id="contact">
+            <Contact />
+          </LazySection>
+        </Suspense>
+
+        <Suspense fallback={null}>
+          <Footer />
+        </Suspense>
     </div>
   )
 }
