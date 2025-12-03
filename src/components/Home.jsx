@@ -26,11 +26,12 @@ const Home = () => {
             onClick={() => window.location.href = '#contact'}>
             Contact</button>
             <button
-            className='bg-gradient-to-r from-pink-500 to-yellow-500 text-white
-            transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'
-            onClick={() =>{window.open('/BereketMengesha.pdf', '_blank','w-800,h-800');
-            }}
-            >Resume</button>
+  className='bg-gradient-to-r from-pink-500 to-yellow-500 text-white
+  transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'
+  onClick={() => window.open(BereketMengesha, '_blank')}
+>
+  Resume
+</button>
         </div>
     </div>
   )
