@@ -1,5 +1,7 @@
 import React from 'react'
 import homepic from "../assets/homepic.jpg";
+import BereketMengesha from "../assets/BereketMengesha.pdf";
+
 
 const Home = () => {
   return (
