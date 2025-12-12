@@ -1,4 +1,6 @@
 import React from 'react'
+import homepic from "../assets/homepic.jpg";
+
 const Home = () => {
   return (
     <div className=' text-black dark:bg-black dark:text-white text-center py-16'>
